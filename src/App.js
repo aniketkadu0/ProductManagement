@@ -5,11 +5,11 @@ import Propconcept from './products/Propconcept';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
     <Routes>
-      <Route path = "/" element = {<Addproduct />} />
-      <Route path = "/productdetails" element = {<Productdetails />} />
-      <Route path = "/updateproduct" element = {<Propconcept />} />
+      <Route path = "/ProductManagement" element = {<Addproduct />} />
+      <Route path = "/ProductManagement/productdetails" element = {<Productdetails />} />
+      <Route path = "/ProductManagement/updateproduct" element = {<Propconcept />} />
     </Routes>
     </BrowserRouter>
   );
