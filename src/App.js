@@ -5,7 +5,7 @@ import Propconcept from './products/Propconcept';
 
 function App() {
   return (
-    <BrowserRouter basename={window.location.pathname || ''}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path = "/" element = {<Addproduct />} />
       <Route path = "/productdetails" element = {<Productdetails />} />
